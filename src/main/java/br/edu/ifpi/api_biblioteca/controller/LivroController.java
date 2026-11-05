@@ -21,10 +21,13 @@ public class LivroController {
         Livro livroCadastrado = service.cadastrar(livro);
         return ResponseEntity.ok(livroCadastrado);
     }
+
     @GetMapping
     public List<Livro> listar(){
       return service.listar();
     }
+
+    @GetMapping("/{id}")
     public Livro buscarPorId(@PathVariable Long id){
       return service.buscarPorId(id);
     }

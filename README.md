@@ -61,10 +61,10 @@ Cliente HTTP → Controller → Service → Repository → Banco H2
 
 | Camada | Responsabilidade | Situação |
 |---|---|---|
-| `controller` | Expor os endpoints e tratar requisições e respostas HTTP | Em desenvolvimento (`LivroController.java` está vazio) |
-| `services` | Concentrar as regras de negócio entre o controller e o repository | Em desenvolvimento (`Services.java` está vazio) |
-| `repository` | Acessar o banco; `LivroRepository` estende `JpaRepository` e herda as operações de CRUD | Implementada |
-| `models` | Representar os dados; `Livro` é mapeada para a tabela `livros` | Implementada |
+| `controller` | Expor os endpoints e tratar requisições e respostas HTTP |
+| `services` | Concentrar as regras de negócio entre o controller e o repository |
+| `repository` | Acessar o banco; `LivroRepository` estende `JpaRepository` e herda as operações de CRUD |
+| `models` | Representar os dados; `Livro` é mapeada para a tabela `livros` |
 
 ### Modelo de dados
 
@@ -103,7 +103,9 @@ Para consultar o banco, acesse o console em `http://localhost:8080/h2-console` c
 
 ## Endpoints
 
-TODO
+POST `/livros` - Adiciona um novo livro.
+GET `/livros` - Lista todos os livros.
+GET `/livros/{id}` - Retorna um livro pelo ID.
 
 ## Postman
 
