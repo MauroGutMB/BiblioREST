@@ -2,11 +2,8 @@
 
 API REST para gerenciamento de livros de uma biblioteca, desenvolvida com Spring Boot.
 
-## Informações acadêmicas
-
-| | |
 |---|---|
-| **Instituição** | IFPI – Campus Corrente |
+| **Instituição** | IFPI - Campus Corrente |
 | **Módulo** | IV |
 | **Disciplina** | Programação para Internet II |
 | **Professor** | Misael Costa |
@@ -84,8 +81,7 @@ Entidade `Livro` (tabela `livros`):
 
 ```bash
 ./mvnw spring-boot:run
-
-# Windows
+# ou
 mvnw.cmd spring-boot:run
 ```
 
@@ -103,9 +99,9 @@ Para consultar o banco, acesse o console em `http://localhost:8080/h2-console` c
 
 ## Endpoints
 
-POST `/livros` - Adiciona um novo livro.
-GET `/livros` - Lista todos os livros.
-GET `/livros/{id}` - Retorna um livro pelo ID.
+POST `/livros` - Adiciona um novo livro.  
+GET `/livros` - Lista todos os livros.  
+GET `/livros/{id}` - Retorna um livro pelo ID.  
 
 ## Postman
 
