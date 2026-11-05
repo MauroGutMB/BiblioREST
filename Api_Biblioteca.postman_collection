@@ -1,0 +1,78 @@
+{
+  "info": {
+    "_postman_id": "be3c4a26-b0e8-4b53-9f75-394f3f7cd7bb",
+    "name": "Api Biblioteca",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "56625943",
+    "_collection_link": "https://go.postman.co/collection/56625943-be3c4a26-b0e8-4b53-9f75-394f3f7cd7bb?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Cadastrar Livro",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"titulo\" : \"O hobbit\",\r\n    \"autor\" : \"Tolkien\",\r\n    \"anoPublicacao\" : \"2000\",\r\n    \"disponivel\" : true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8000/livros",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "livros"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Acerto",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/livros",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "livros"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Consultar Livro",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8000/livros/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "livros",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
