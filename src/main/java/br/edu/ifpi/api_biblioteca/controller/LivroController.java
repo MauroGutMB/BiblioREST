@@ -1,9 +1,7 @@
 package br.edu.ifpi.api_biblioteca.controller;
 
 import br.edu.ifpi.api_biblioteca.models.Livro;
-import br.edu.ifpi.api_biblioteca.repository.LivroRepository;
-import br.edu.ifpi.api_biblioteca.services.*;
-import org.springframework.http.HttpStatus;
+import br.edu.ifpi.api_biblioteca.service.*;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
