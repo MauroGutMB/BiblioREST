@@ -8,7 +8,9 @@ import java.util.List;
 
 @Service
 public class LivroService {
+
     private final LivroRepository repository;
+
     public LivroService(LivroRepository repository) {
         this.repository = repository;
     }
