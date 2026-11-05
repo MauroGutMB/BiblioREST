@@ -2,11 +2,10 @@
 
 API REST para gerenciamento de livros de uma biblioteca, desenvolvida com Spring Boot.
 
-|---|---|
-| **Instituição** | IFPI - Campus Corrente |
-| **Módulo** | IV |
-| **Disciplina** | Programação para Internet II |
-| **Professor** | Misael Costa |
+**IFPI - Campus Corrente**  
+**Módulo IV**  
+**Programação para Internet II**  
+**Professor Dr. Misael Costa**  
 
 ### Alunos
 
@@ -43,7 +42,7 @@ Cliente HTTP → Controller → Service → Repository → Banco H2
     │   │   ├── controller
     │   │   │   └── LivroController.java        # Recebe as requisições HTTP
     │   │   ├── services
-    │   │   │   └── Services.java               # Regras de negócio
+    │   │   │   └── LivroService.java           # Regras de negócio
     │   │   ├── repository
     │   │   │   └── LivroRepository.java        # Acesso ao banco de dados
     │   │   └── models
@@ -56,8 +55,8 @@ Cliente HTTP → Controller → Service → Repository → Banco H2
 
 ### Camadas
 
-| Camada | Responsabilidade | Situação |
-|---|---|---|
+| Camada | Responsabilidade |
+|---|---|
 | `controller` | Expor os endpoints e tratar requisições e respostas HTTP |
 | `services` | Concentrar as regras de negócio entre o controller e o repository |
 | `repository` | Acessar o banco; `LivroRepository` estende `JpaRepository` e herda as operações de CRUD |
@@ -93,7 +92,7 @@ Para consultar o banco, acesse o console em `http://localhost:8080/h2-console` c
 
 | Campo | Valor |
 |---|---|
-| **JDBC URL** | `jdbc:h2:file:./data/apiProdutos` |
+| **JDBC URL** | `jdbc:h2:file:./data/apiBiblioteca` |
 | **Usuário** | `sa` |
 | **Senha** | *(em branco)* |
 
