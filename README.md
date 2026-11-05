@@ -15,8 +15,8 @@ API REST para gerenciamento de livros de uma biblioteca, desenvolvida com Spring
 
 - Mauro Gutemberg Magalhães Barros
 - Breno de Souza Guedes
--
-- 
+- Marina Alves dos Santos
+- Ray Dias
 
 ## Tecnologias
 
