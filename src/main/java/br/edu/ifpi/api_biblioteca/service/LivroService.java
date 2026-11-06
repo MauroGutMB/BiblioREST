@@ -1,6 +1,9 @@
 package br.edu.ifpi.api_biblioteca.service;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
+
 import br.edu.ifpi.api_biblioteca.models.Livro;
 import br.edu.ifpi.api_biblioteca.repository.LivroRepository;
 
@@ -25,6 +28,6 @@ public class LivroService {
     }
 
     public Livro buscarPorId(Long id) {
-        return repository.findById(id).orElse(null);
+        return repository.findById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Livro não encontrado"));
     }
 }
